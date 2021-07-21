@@ -1,25 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import { timezone, removeTags } from './Helpers';
 const jikanjs  = require('jikanjs')
 
-// Source: https://www.geeksforgeeks.org/how-to-strip-out-html-tags-from-a-string-using-javascript/
-function removeTags(str) { 
-    if ((str===null) || (str==='')) 
-        return false; 
-    else
-        str = str.toString(); 
-          
-    // Regular expression to identify HTML tags in  
-    // the input string. Replacing the identified  
-    // HTML tag with a null string. 
-    return str.replace( /(<([^>]+)>)/ig, ''); 
-} 
-
-// Source: https://www.w3resource.com/javascript-exercises/javascript-date-exercise-37.php
-function timezone() 
-{ 
-  return /\((.*)\)/.exec(new Date().toString())[1];
-}
 
 class AnimeList extends Component {
     constructor(props) {
@@ -202,7 +185,7 @@ class AnimeList extends Component {
                         {this.state.myanime.map(show => {
                             let watched = '';
                             if (show.airing_status === 1 && show.total_episodes === 0) {
-                                watched = watched.concat("Have watched: ", show.watched_episodes, "/?");
+                                watched = watched.concat("Watched: ", show.watched_episodes, "/?");
                             } else {
                                 watched = watched.concat("Watched: ", show.watched_episodes, "/", show.total_episodes);
                             }
