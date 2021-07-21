@@ -22,7 +22,7 @@ function Home(props) {
           and explore and eat food around Chicago.
           <br></br>
           <br></br>
-          Now I am a software engineer at Capital One in the Technology Development Program.
+          Now I am a software engineer at Capital One in their Technology Development Program.
           Outside of work, I love to play Apex Legends (I main Bloodhound/Wraith), watch movies (The Prestige, Lincoln Lawyer, etc.) and 
           shows of all kind (Bojack Horseman, Love is Blind, etc.), and photography.
           <br></br>
