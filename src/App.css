@@ -295,8 +295,8 @@ button {
   display: block;
 }
 
-/* Container for each anime */
-.anime-container {
+/* Container for each anime and manga */
+.anime-manga-container {
   display: inline-block;
   text-align: center;
   margin-left: 10vw;
@@ -304,7 +304,7 @@ button {
   margin-bottom: 10vh;
 }
 
-.anime-card {
+.anime-manga-card {
   position: relative;
   display: inline-grid;
   text-align: center;
@@ -318,7 +318,7 @@ button {
   border-style: solid;
 }
 
-.anime-card img {
+.anime-manga-card img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -347,8 +347,8 @@ button {
   transition: all 0.4s ease-in-out 0s;
 }
 
-.anime-card:hover .layer-slidedown,
-.anime-card:active .layer-slidedown {
+.anime-manga-card:hover .layer-slidedown,
+.anime-manga-card:active .layer-slidedown {
   opacity: 1;
 }
 

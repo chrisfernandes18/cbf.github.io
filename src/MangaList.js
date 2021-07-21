@@ -23,7 +23,7 @@ class MangaList extends Component {
         return(
             <div className="anime-list-container">
                 <h1>My Manga List</h1>
-                <div className="anime-container">
+                <div className="anime-manga-container">
                     {this.state.mymanga.map(book => {
                         let read = '';
                         if (book.publishing_status === 1 && book.total_chapters === 0) {
@@ -39,7 +39,7 @@ class MangaList extends Component {
                         }
                         let score = ''.concat("Score: ", book.score, "/10");
                         return (
-                            <div className="anime-card" key={book.mal_id}>
+                            <div className="anime-manga-card" key={book.mal_id}>
                                 <a href={book.url}>
                                     <img src={book.image_url} alt="Show Cover"></img>
                                 </a>

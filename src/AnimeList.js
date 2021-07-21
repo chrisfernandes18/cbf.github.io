@@ -152,7 +152,7 @@ class AnimeList extends Component {
                     <h1>Anime List</h1>
                     <h2>Current {this.state.season} Anime {this.state.seasonYear}</h2>
                     <h4>Source: anichart.net</h4>
-                    <div className="anime-container">
+                    <div className="anime-manga-container">
                         {this.state.anime.map(show => {
                             const airing = show.nextAiringEpisode === null? "Completed": new Date(show.nextAiringEpisode.airingAt * 1000);
                             let time = "";
@@ -166,7 +166,7 @@ class AnimeList extends Component {
                                 time = time.concat('Airing at ', (airing.getMonth() + 1).toString(), '-', airing.getDate(), '-', airing.getFullYear(), ' at ', airing.getHours(), ':', airing.getMinutes() < 10? "0" + airing.getMinutes(): airing.getMinutes(), ' ', timezone());
                             } 
                             return (
-                            <div className="anime-card" key={show.title.native}>
+                            <div className="anime-manga-card" key={show.title.native}>
                                 <a href={filteredSites[0].site === "Official Site"?filteredSites[0].url:"/anime-list"}>
                                     <img src={show.coverImage.extraLarge} alt="Show Cover"></img>
                                 </a>
@@ -181,7 +181,7 @@ class AnimeList extends Component {
                     </div>
                     <h2>My Anime List</h2>
                     <h4>Source: myanimelist.net</h4>
-                    <div className="anime-container">
+                    <div className="anime-manga-container">
                         {this.state.myanime.map(show => {
                             let watched = '';
                             if (show.airing_status === 1 && show.total_episodes === 0) {
@@ -191,7 +191,7 @@ class AnimeList extends Component {
                             }
                             let score = ''.concat("Score: ", show.score, "/10");
                             return (
-                            <div className="anime-card" key={show.mal_id}>
+                            <div className="anime-manga-card" key={show.mal_id}>
                                 <a href={show.url}>
                                     <img src={show.image_url} alt="Show Cover"></img>
                                 </a>
