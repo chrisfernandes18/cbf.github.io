@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import { timezone, removeTags } from './Helpers';
+import './../App.css';
+import { timezone, removeTags } from '../Helpers';
 const jikanjs  = require('jikanjs')
 
 

@@ -6,9 +6,9 @@ import Projects from './Projects.js';
 import Thumbnail from './Thumbnail.js';
 import Contact from './Contact.js';
 import Blog from './Blog.js';
-import AnimeList from './AnimeList.js';
-import MangaList from "./MangaList.js"
-import BookList from './BookList.js';
+import AnimeList from './lists/AnimeList.js';
+import MangaList from "./lists/MangaList.js"
+import BookList from './lists/BookList.js';
 import './App.css';
 import facebookIcon from './assets/icons/facebook-icon.svg';
 import instagramIcon from './assets/icons/instagram-icon.png';

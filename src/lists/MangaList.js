@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './../App.css';
 const jikanjs = require('jikanjs');
 
 class MangaList extends Component {
@@ -15,7 +15,6 @@ class MangaList extends Component {
             return this.setState({
                 mymanga: response.manga
             });
-
         }).catch(error => console.log(error));
         
     }
