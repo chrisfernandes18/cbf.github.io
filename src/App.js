@@ -26,17 +26,7 @@ function App() {
             <Link to="/projects" className="item">Projects</Link>
             <Link to="/photos" className="item">Photos</Link>
             <Link to="/contact" className="item">Contact</Link>
-            <div className="dropdown">
-              <div className="item">
-                More
-              </div>
-              <div className="dropdown-content">
-                <Link to="/blog" className="item">Blog</Link>
-                <Link to="/anime-list" className="item">Anime List</Link>
-                <Link to="/manga-list" className="item">Manga List</Link>
-                <Link to="/book-list" className="item">Book List</Link>
-              </div>
-            </div>
+            <Link to="/blog" className="item">Blog</Link>
         </div>
         
         <Switch>
@@ -45,9 +35,6 @@ function App() {
           <Route exact path="/photos" component={Photos} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/blog" component={Blog} />
-          <Route exact path="/anime-list" component={AnimeList} />
-          <Route exact path="/manga-list" component={MangaList} />
-          <Route exact path="/book-list" component={BookList} />
         </Switch>
 
         <div className="container">
