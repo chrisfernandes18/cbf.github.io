@@ -9,6 +9,7 @@ import Blog from '@/views/Blog.vue'
 
 const router = createRouter({
   history: createWebHistory(),
+  base: '/chrisfernandes18.github.io',
   routes: [
     {
       path: '/',
