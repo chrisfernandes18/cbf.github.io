@@ -1,0 +1,456 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Default background for website*/
+body {
+  background-color: lightblue;
+}
+
+.photos h2 {
+  text-align: left;
+  padding: 0 2vw;
+}
+
+.photos h3 {
+  text-align: left;
+  padding: 0 3vw;
+}
+
+.photos img {
+  margin: 2px;
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 20vw;
+}
+
+.photos div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+}
+
+div.photos ::-webkit-scrollbar:horizontal {
+  height: 4px;
+}
+
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10;
+}
+
+/* Navigation style */
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 2vw;
+  font-family: monospace;
+  font-size: 3vh;
+  display: block;
+}
+
+.navigation a:hover {
+  color: darkcyan;
+}
+
+.navigation-element {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation a {
+    display: block;
+  }
+
+  button {
+    display: block;
+    padding: 2vw;
+    font-size: 3vh;
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .paragraph p {
+    padding: 0 3vw;
+  }
+
+  .code p {
+    padding: 0 3vw;
+  }
+}
+
+/* Footer style */
+.footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 200%;
+}
+
+.footer-element {
+  display: inline-block;
+  margin: 3vh 1vw;
+}
+
+.footer-element a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Default paragraph style */
+.paragraph {
+  display: inline-block;
+}
+
+.paragraph p {
+  text-align: justify;
+  color: black;
+  display: inline-block;
+  padding: 0vw 20vw;
+  margin: 1em;
+  font-size: 20px;
+}
+
+.paragraph a {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+/* Projects page style for cards */
+.code {
+  display: inline-flex;
+}
+
+.code p {
+  text-align: center;
+  color: black;
+  background-color: rgb(144, 181, 194);
+  background-clip: content-box;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.project-cards-container {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
+}
+.project-cards-container a {
+  text-decoration: none;
+}
+
+.card-container {
+  position: relative;
+  display: inline-grid;
+  background-color: #f5f6ff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+  padding: 25px;
+  margin: 50px 25px 25px;
+  text-align: center;
+  font-family: Muli, sans-serif;
+  font-style: normal;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.card-container p {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #000;
+}
+
+.card-container h3 {
+  text-align: center;
+  color: darkcyan;
+}
+.card-container text {
+  font-family: Source Code Pro;
+  color: #3e3e49;
+  bottom: 20px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tech-container {
+  text-align: left;
+}
+
+.bottom {
+  width: 100%;
+  bottom: 0;
+  background-color: darkcyan;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 10px;
+}
+
+.bottom,
+.card-container text {
+  position: absolute;
+  left: 0;
+  padding-bottom: 10px;
+}
+
+/* Bottom of the page */
+.copyright-footer,
+.copyright-text {
+  display: inline-flex;
+  text-align: center;
+  font-size: 12px;
+}
+
+.active {
+  background-color: darkcyan;
+}
+
+.project-cards-container a:visited {
+  color: black;
+}
+
+/* The dropdown container */
+.dropdown {
+  padding: 2vw;
+  overflow: hidden;
+  font-size: 3vh;
+}
+
+.dropdown .item:hover {
+  color: darkcyan;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Container for each anime and manga */
+.anime-manga-container {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
+}
+
+.anime-manga-card {
+  position: relative;
+  display: inline-grid;
+  text-align: center;
+  font-family: Muli, sans-serif;
+  font-style: normal;
+  border-radius: 10px;
+  margin: 50px 25px 25px;
+  width: 200px;
+  background-color: rgb(252, 214, 88);
+  border: darkcyan;
+  border-style: solid;
+}
+
+.anime-manga-card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7.5px;
+  width: 185px;
+  height: 265px;
+}
+
+.layer-slidedown {
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.anime-manga-card:hover .layer-slidedown,
+.anime-manga-card:active .layer-slidedown {
+  opacity: 1;
+}
+
+.layer-slidedown .layer-slidedown-text {
+  padding: 10px;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+}
+
+.layer-slidedown-text a:hover {
+  color: darkcyan;
+}
+
+.layer-slidedown a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+/* Scrollbar for Anime Cards */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+  margin: 5px 5px 5px 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100px;
+  margin: 5px 5px 5px 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* The dropdown container */
+.dropdown-mats {
+  padding: 2vw;
+  overflow: hidden;
+  font-size: 3vh;
+}
+
+.dropdown-mats .item:hover {
+  color: darkcyan;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content-mats {
+  display: none;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-mats a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-mats:hover .dropdown-content-mats {
+  display: block;
+}
+
+li.list {
+  display: block;
+  padding: 5px;
+}
+.list b {
+  color: rgb(1, 122, 122);
+}
