@@ -17,8 +17,8 @@
 
 <script setup>
 import PhotoGallery from '../components/PhotoGallery.vue';
-const costaricaPhotos18 = Object.keys(import.meta.glob('../assets/costa_rica/2018/*.jpg'));
-const costaricaPhotos19 = Object.keys(import.meta.glob('../assets/costa_rica/2019/*.jpg'));
-const eclipsePhotos = Object.keys(import.meta.glob('../assets/eclipse/*.jpg'));
-const japanPhotos = Object.keys(import.meta.glob('../assets/japan/*.jpg'));
+const costaricaPhotos18 = Object.values(import.meta.glob('../assets/costa_rica/2018/*.jpg',  { eager: true, import: 'default', as: "url" }));
+const costaricaPhotos19 = Object.values(import.meta.glob('../assets/costa_rica/2019/*.jpg',  { eager: true, import: 'default', as: "url" }));
+const eclipsePhotos = Object.values(import.meta.glob('../assets/eclipse/*.jpg',  { eager: true, import: 'default', as: "url" }));
+const japanPhotos = Object.values(import.meta.glob('../assets/japan/*.jpg',  { eager: true, import: 'default', as: "url" }));
 </script>
