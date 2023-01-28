@@ -5,7 +5,7 @@
     >
     <img 
       v-for="(photo, index) in photos"
-      :src="photo.replace('../', '/src/')"
+      :src="photo"
       />
   </div>
 </template>
