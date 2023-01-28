@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import fb from '../assets/icons/facebook-icon.svg'
-import gh from '../assets/icons/github-icon.svg'
-import ig from '../assets/icons/instagram-icon.png'
-import li from '../assets/icons/linkedin-icon.svg'
+import fb from '@/assets/icons/facebook-icon.svg'
+import gh from '@/assets/icons/github-icon.svg'
+import ig from '@/assets/icons/instagram-icon.png'
+import li from '@/assets/icons/linkedin-icon.svg'
 
 export default {
   name: 'Thumbnails',

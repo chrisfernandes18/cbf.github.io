@@ -38,6 +38,6 @@
 </template>
 
 <script setup>
-import finnJake from '../assets/adventuretime/finn_jake.png';
-import resume from '../assets/resume/christianbjerre-fernandes.pdf';
+import finnJake from '@/assets/adventuretime/finn_jake.png';
+import resume from '@/assets/resume/christianbjerre-fernandes.pdf';
 </script>
