@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
 import Home from '@/views/Home.vue'
 import Projects from '@/views/Projects.vue'
@@ -8,8 +8,7 @@ import Contact from '@/views/Contact.vue'
 import Blog from '@/views/Blog.vue'
 
 const router = createRouter({
-  history: createWebHistory(),
-  base: '/chrisfernandes18.github.io',
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
