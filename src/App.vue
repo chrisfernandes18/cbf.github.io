@@ -22,8 +22,8 @@
 </template>
 
 <script setup>
-import './assets/main.css'
-import Thumbnails from './components/Thumbnails.vue'
+import './assets/main.css';
+import Thumbnails from '@/components/Thumbnails.vue';
 </script>
 
 <style>

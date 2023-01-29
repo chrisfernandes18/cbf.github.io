@@ -8,5 +8,5 @@
 </template>
 
 <script setup>
-import ProjectTile from '@/components/ProjectTile.vue'
+import ProjectTile from '@/components/ProjectTile.vue';
 </script>
