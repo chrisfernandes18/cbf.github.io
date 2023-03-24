@@ -22,8 +22,8 @@ export default {
       width: 0,
       previousNum: -1,
       divChild: null,
-      scrollValue: 0.5,
-      intervalValue: 15,
+      scrollValue: 1,
+      intervalValue: 30,
       numImgs: 0,
     };
   },
@@ -84,7 +84,6 @@ export default {
         const total = this.width;
         // depending on if the div is scrolling left or right we
         // add or subtract a value
-        console.log(this.photosId, this.divChild.scrollLeft);
         if (this.photosId % 2 == 0) {
           if (this.divChild.scrollLeft !== this.previousNum) {
             // keep track of when we stagnate increase value so we can reset
