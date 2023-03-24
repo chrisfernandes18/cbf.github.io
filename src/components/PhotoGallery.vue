@@ -95,7 +95,7 @@ export default {
             this.divChild.scrollLeft = 0;
           }
         } else {
-          if (this.divChild.scrollLeft !== 0 ) {
+          if (this.divChild.scrollLeft > 0 ) {
             //console.log('scrolling', this.divChild.scrollLeft);
             // decrease scroll value to continue to the end
             this.divChild.scrollTo(this.divChild.scrollLeft - this.scrollValue, 0);
