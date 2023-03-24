@@ -84,6 +84,7 @@ export default {
         const total = this.width;
         // depending on if the div is scrolling left or right we
         // add or subtract a value
+        console.log(this.photosId, this.divChild.scrollLeft);
         if (this.photosId % 2 == 0) {
           if (this.divChild.scrollLeft !== this.previousNum) {
             // keep track of when we stagnate increase value so we can reset
@@ -94,7 +95,6 @@ export default {
             // reset the value if we have scrolled all the way to the end
             this.divChild.scrollLeft = 0;
           }
-          console.log(this.photosId, this.divChild.scrollLeft);
         } else {
           if (this.divChild.scrollLeft > 0 ) {
             // decrease scroll value to continue to the end
