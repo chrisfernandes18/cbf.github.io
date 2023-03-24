@@ -43,7 +43,7 @@ export default {
       this.numImgs += 1;
     },
     /**
-     * This function adds an interval for atlernating scrolling
+     * This function adds an interval for alternating scrolling
      * of horizontal scrolling div tag of images. To be used 
      * with a window onload listener.
      */
@@ -96,11 +96,9 @@ export default {
           }
         } else {
           if (this.divChild.scrollLeft > 0 ) {
-            //console.log('scrolling', this.divChild.scrollLeft);
             // decrease scroll value to continue to the end
             this.divChild.scrollTo(this.divChild.scrollLeft - this.scrollValue, 0);
           } else {
-            //console.log('reset', total);
             // reset the value if we have scrolled all the way to the end
             this.divChild.scrollLeft = total;
           }
