@@ -94,6 +94,7 @@ export default {
             // reset the value if we have scrolled all the way to the end
             this.divChild.scrollLeft = 0;
           }
+          console.log(this.photosId, this.divChild.scrollLeft);
         } else {
           if (this.divChild.scrollLeft > 0 ) {
             // decrease scroll value to continue to the end
