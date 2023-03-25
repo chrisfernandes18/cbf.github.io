@@ -14,6 +14,7 @@
           <RouterLink to="/blog" class="item">Blog</RouterLink>
           <RouterLink to="/animelist" class="item">Anime List</RouterLink>
           <RouterLink to="/mangalist" class="item">Manga List</RouterLink>
+          <RouterLink to="/booklist" class="item">Book List</RouterLink>
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div className="anime-list-container">
+    <div class="anime-list-container">
       <AnimeListTiles></AnimeListTiles>
     </div>
   </div>

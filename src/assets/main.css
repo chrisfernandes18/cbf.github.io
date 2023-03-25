@@ -447,11 +447,18 @@ button {
 .dropdown-mats:hover .dropdown-content-mats {
   display: block;
 }
+ul.lines {
+  padding: 0 19vw;
+}
 
 li.list {
+  text-align: left;
   display: block;
   padding: 5px;
 }
 .list b {
   color: rgb(1, 122, 122);
+}
+span.rating {
+  float: right;
 }

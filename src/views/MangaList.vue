@@ -1,11 +1,11 @@
 <template>
-    <div>
-      <div className="anime-list-container">
-        <MangaListTiles></MangaListTiles>
-      </div>
+  <div>
+    <div className="anime-list-container">
+      <MangaListTiles></MangaListTiles>
     </div>
-  </template>
-  
-  <script setup>
-  import MangaListTiles from '@/components/MangaListTiles.vue';
-  </script>
+  </div>
+</template>
+
+<script setup>
+import MangaListTiles from '@/components/MangaListTiles.vue';
+</script>

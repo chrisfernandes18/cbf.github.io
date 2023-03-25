@@ -8,6 +8,7 @@ import Contact from '@/views/Contact.vue';
 import Blog from '@/views/Blog.vue';
 import AnimeList from '@/views/AnimeList.vue';
 import MangaList from '@/views/MangaList.vue';
+import BookList from '@/views/BookList.vue';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -46,6 +47,11 @@ const router = createRouter({
       path: '/mangalist',
       name: 'Manga List',
       component: MangaList,
+    },
+    {
+      path: '/booklist',
+      name: 'Book List',
+      component: BookList,
     }
   ]
 })
