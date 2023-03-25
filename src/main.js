@@ -7,6 +7,7 @@ import Photos from '@/views/Photos.vue';
 import Contact from '@/views/Contact.vue';
 import Blog from '@/views/Blog.vue';
 import AnimeList from '@/views/AnimeList.vue';
+import MangaList from '@/views/MangaList.vue';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -40,6 +41,11 @@ const router = createRouter({
       path: '/animelist',
       name: 'Anime List',
       component: AnimeList,
+    },
+    {
+      path: '/mangalist',
+      name: 'Manga List',
+      component: MangaList,
     }
   ]
 })

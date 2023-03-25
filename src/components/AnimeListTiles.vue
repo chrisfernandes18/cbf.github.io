@@ -35,9 +35,9 @@
         <div class="layer-slidedown">
           <div class="layer-slidedown-text">{{ val.list_status.status === 'watching' ? "Currently watching." : val.list_status.status === 'completed' ? "Completed." : val.list_status.status === 'plan_to_watch'? "Plan to watch." : 'Dropped.' }}</div>
           <div></div>
-          <div class="layer-slidedown-text">{{ `Watched: ${val.list_status.num_episodes_watched}/${val.node.num_episodes}` }}</div>
+          <div class="layer-slidedown-text">{{ `Watched: ${ val.list_status.num_episodes_watched }/${ val.node.num_episodes === 0 ? '?' : val.node.num_episodes } Episodes` }}</div>
           <div></div>
-          <div class="layer-slidedown-text">{{ `Score: ${val.list_status.score}/10` }}</div>
+          <div class="layer-slidedown-text">{{ `Score: ${ val.list_status.score }/10` }}</div>
           <div></div>
           <div class="layer-slidedown-text"><a :href="'https://myanimelist.net/anime/' + val.node.id" >{{ "MAL Link" }}</a></div>
         </div>
@@ -102,10 +102,10 @@ export default {
   },
   watch: {
     myAnime() {
-      if (this.myAnime.status_code == 200) {
+      if (this.myAnime.status_code === 200) {
         this.addColor(this.myAnime);
       }
-    }
+    },
   },
   methods: {
     /**
