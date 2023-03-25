@@ -1,11 +1,12 @@
-import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
-import App from '@/App.vue'
-import Home from '@/views/Home.vue'
-import Projects from '@/views/Projects.vue'
-import Photos from '@/views/Photos.vue'
-import Contact from '@/views/Contact.vue'
-import Blog from '@/views/Blog.vue'
+import { createApp } from 'vue';
+import { createRouter, createWebHashHistory } from 'vue-router';
+import App from '@/App.vue';
+import Home from '@/views/Home.vue';
+import Projects from '@/views/Projects.vue';
+import Photos from '@/views/Photos.vue';
+import Contact from '@/views/Contact.vue';
+import Blog from '@/views/Blog.vue';
+import AnimeList from '@/views/AnimeList.vue';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -35,6 +36,11 @@ const router = createRouter({
       name: 'Blog',
       component: Blog,
     },
+    {
+      path: '/animelist',
+      name: 'Anime List',
+      component: AnimeList,
+    }
   ]
 })
 

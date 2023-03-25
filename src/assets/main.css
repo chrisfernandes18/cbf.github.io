@@ -71,7 +71,8 @@ div.photos ::-webkit-scrollbar:horizontal {
   height: 4px;
 }
 
-.item {
+.extra-items {
+  font-family: monospace;
   margin-left: auto;
   margin-right: auto;
   padding: 10;
@@ -286,7 +287,7 @@ button {
   font-size: 3vh;
 }
 
-.dropdown .item:hover {
+.dropdown .extra-items:hover {
   color: darkcyan;
 }
 
@@ -310,7 +311,7 @@ button {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.show-dropdown {
   display: block;
 }
 
@@ -332,8 +333,8 @@ button {
   border-radius: 10px;
   margin: 50px 25px 25px;
   width: 200px;
-  background-color: rgb(252, 214, 88);
-  border: darkcyan;
+  background-color: #E6ADD8;
+  border: #6F8B94;
   border-style: solid;
 }
 
@@ -419,7 +420,7 @@ button {
   font-size: 3vh;
 }
 
-.dropdown-mats .item:hover {
+.dropdown-mats .extra-items:hover {
   color: darkcyan;
 }
 
