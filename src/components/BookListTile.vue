@@ -19,6 +19,14 @@ export default {
     }
   },
   methods: {
+    /**
+     * @description
+     * Given a header string returns the string without
+     * hyphens and capitalized words.
+     * 
+     * @param {String} name 
+     * @returns {String} cleaned up header
+     */
     fixName(name) {
       const split = name.split('-');
       if (split.length > 1) {
