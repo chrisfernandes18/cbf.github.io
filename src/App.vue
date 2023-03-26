@@ -36,15 +36,23 @@
 import './assets/main.css';
 import Thumbnails from '@/components/Thumbnails.vue';
 
-// toggles the dropdown menu
+/**
+ * @description
+ * Click event handler to show dropdown menu in navbar
+ * 
+ * @param {Object} event 
+ * @returns {Void}
+ */
 function onClickEvent(event) {
   document.getElementById('myDropdown').classList.toggle('show-dropdown');
 };
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
+  // catch click target and check to make sure the class isn't .extra-items
   if (!event.target.matches('.extra-items')) {
-  const myDropdown = document.getElementById('myDropdown');
+    // get the dropdown element and if it's toggled to show remove the class to show it
+    const myDropdown = document.getElementById('myDropdown');
     if (myDropdown.classList.contains('show-dropdown')) {
       myDropdown.classList.remove('show-dropdown');
     }

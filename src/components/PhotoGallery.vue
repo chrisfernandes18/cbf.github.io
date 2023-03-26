@@ -43,9 +43,12 @@ export default {
       this.numImgs += 1;
     },
     /**
+     * @description
      * This function adds an interval for alternating scrolling
      * of horizontal scrolling div tag of images. To be used 
      * with a window onload listener.
+     * 
+     * @returns {Void}
      */
     loadEvent() {
       // get cumulative width of all photos in div
@@ -66,17 +69,23 @@ export default {
       this.mouseleaveEvent();
     },
     /**
+     * @description
      * This function removes an interval to pause the scrolling
      * on a horizontal scrolling div tag. To be used with a div
      * event listener for the mouseenter event.
+     * 
+     * @returns {Void}
      */
     mouseenterEvent() {
       window.clearInterval(this.scrollIntervalIds.pop());
     },
     /**
+     * @description
      * This function re-adds an interval to continue horizontal 
      * scrolling on a horizontal div tag of images. To be used 
      * with a div event listener for the mouseleave event.
+     * 
+     * @returns {Void}
      */
     mouseleaveEvent() {
       // add interval

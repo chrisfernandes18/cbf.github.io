@@ -59,6 +59,8 @@ export default {
     };
     const response = await fetch(this.APILink, options);
     this.myManga = await response.json();
+
+    // setting value to stop loading component
     this.allLoaded = false;
   },
   watch: {

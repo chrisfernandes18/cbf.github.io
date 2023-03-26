@@ -35,6 +35,7 @@ export default {
 		BookListTile,
   },
 	async created() {
+    // API call to scrape books and set value in data
 		const options = {
       method: 'POST',
       headers: {
@@ -54,9 +55,6 @@ export default {
         this.loaded = false;
       }
 		}
-	},
-	methods: {
-
 	},
 }
 </script>
